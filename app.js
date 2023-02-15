@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-// Assign routes
+// Test Route
 app.get('/', (req, res) => {
     res.send('Hello Truffle!');
 });
@@ -45,5 +45,4 @@ app.post('/bills', (req, res) => {
 
 // Tell the server to listen for incoming traffic on a specific port
 const port = 3000;
-
 app.listen(port, () => console.log(`Listening on port ${port}...`));
