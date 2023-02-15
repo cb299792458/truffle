@@ -9,7 +9,6 @@ app.get('/', (req, res) => {
 });
 
 // Create bills
-// import bills from './seed';
 const bills = [];
 
 const seed1 = {
@@ -41,7 +40,7 @@ app.post('/bills', (req, res) => {
     // console.log(req.body);
     bills.push(req.body);
 
-    res.send(`Thanks for submitting this bill for ${req.body.name}!`)
+    res.send(`Bill received for ${req.body.name}!`)
 });
 
 // Tell the server to listen for incoming traffic on a specific port
